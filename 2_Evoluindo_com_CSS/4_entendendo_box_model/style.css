@@ -1,0 +1,13 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  background-color: #121212;
+  width: 440px;
+  color: #ffffff;
+  margin: 50px auto 0 auto;/*top - right - bottom - left espaçamento externo*/
+  padding: 30px; /*espaçamento interno*/
+  border: 2px solid red;
+  border-radius: 10px;
+}
