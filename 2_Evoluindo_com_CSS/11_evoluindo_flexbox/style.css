@@ -1,0 +1,55 @@
+/* Reset: remove os estilos padrão aplicados pelo navegador */
+* {
+  /* Inclui padding e border no tamanho total do elemento */
+  box-sizing: border-box;
+  /* Demonstração box-sizing
+    https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-sizing
+  */
+  margin: 0;
+  padding: 0;
+  outline: 0;
+
+}
+
+body {
+  /* Fonte padrão da página (Roboto importada no HTML) */
+  font-family: 'Roboto', sans-serif;
+  /* Altura maior que a tela para permitir rolagem (scroll) */
+  height: 180vh;
+}
+
+.container {
+  /* Fundo escuro para destacar os itens coloridos */
+  background-color: #121212;
+  display: flex; /* Torna o elemento um Flex Container */
+  flex-direction: row; /* Organiza os itens em linha (eixo horizontal - padrão) */
+  
+  /* Altura do container para visualizar a distribuição dos itens */
+  height: 500px;
+  /* Afasta o container das bordas da tela */
+  margin: 50px;
+}
+
+.area {
+  /* Tamanho base de cada item, que será ajustado pelo Flexbox */
+  width: 100px;
+  height: 100px;
+}
+
+/* flex: 1 = flex-grow 1 + flex-shrink 1 + flex-basis 0%
+   O espaço disponível é dividido entre os itens conforme o flex-grow */
+
+.item-1 {
+  background-color: red;
+  flex: 1; /* Ocupa 1 parte do espaço disponível */
+}
+
+.item-2 {
+  background-color: blue;
+  flex: 2; /* Ocupa 2 partes: fica com o dobro do tamanho dos outros itens */
+}
+
+.item-3 {
+  background-color: green;
+  flex: 1; /* Ocupa 1 parte do espaço disponível */
+}
